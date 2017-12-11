@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/center_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_group">
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F5F5"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_selector_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_lease"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_selector_lease"
+            android:text="租赁" />
+
+        <RadioButton
+            android:id="@+id/rb_life"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_selector_life"
+            android:text="生活" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radio_selector_user"
+            android:text="我的" />
+    </RadioGroup>
+</RelativeLayout>
