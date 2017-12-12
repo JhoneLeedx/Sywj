@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+<android.support.v7.widget.AppCompatEditText
+    android:hint="请填写业主或者家庭成员的手机号码"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:layout_height="60dp"
+    android:background="@color/colorWhite"/>
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/colorWhite"
+        android:text="提交"/>
+</LinearLayout>

@@ -1,6 +1,7 @@
 package com.jhonlee.sywj.api;
 
 import com.jhonlee.lib.network.BaseEntity;
+import com.jhonlee.sywj.pojo.City;
 import com.jhonlee.sywj.pojo.Result;
 
 import java.util.List;
@@ -20,4 +21,7 @@ public interface IRequest {
 
     @GET("Service.ashx")
     Observable<BaseEntity<List<Result>>> getRequest(@QueryMap Map<String,Object> params);
+
+    @GET("Service.ashx")
+    Observable<BaseEntity<List<City>>> getCity(@QueryMap Map<String,Object> params);
 }

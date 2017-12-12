@@ -4,6 +4,10 @@
     package="com.jhonlee.sywj">
     <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"
         tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,6 +25,8 @@
         <activity android:name=".ui.online.PaymentActivity" />
         <activity android:name=".ui.bind.BindHouseActivity" />
         <activity android:name=".ui.online.ReportActivity" />
+        <activity android:name=".ui.bind.BindNextActivity" />
+        <activity android:name=".ui.online.BSHistoryActivity" />
     </application>
 
 </manifest>

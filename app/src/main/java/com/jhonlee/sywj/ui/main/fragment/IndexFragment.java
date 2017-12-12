@@ -1,6 +1,5 @@
 package com.jhonlee.sywj.ui.main.fragment;
 
-import android.content.SharedPreferences;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.ViewPager;
@@ -187,7 +186,7 @@ public class IndexFragment extends BaseFragment implements ISuccessView {
         params.put("Class","CommunityNotificationTW");
         params.put("Command","CommunityNotificationTWList");
         params.put("Attribute","%3Cattributes%3E%3CEmpty%3E%3C%2FEmpty%3E%3CCommunityId%3E30de2bf0-7d26-4950-8866-38d317535b67%3C%2FCommunityId%3E%3CCurrPage%3E1%3C%2FCurrPage%3E%3CPageSize%3E10%3C%2FPageSize%3E%3C%2Fattributes%3E");
-        params.put("Mac","df3ae63253f5a9cefae16eafeac6a901");
+        params.put("Mac","3d22be6591e65c9a8867598b2aa4abc1");
 
         return params;
     }
