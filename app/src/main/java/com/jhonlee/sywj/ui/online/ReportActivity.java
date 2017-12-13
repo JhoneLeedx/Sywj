@@ -4,6 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jhonlee.lib.base.BaseActivity;
+import com.jhonlee.lib.ioc.Click;
 import com.jhonlee.sywj.R;
 import com.jhonlee.sywj.ui.ToolBar;
 
@@ -32,7 +33,6 @@ public class ReportActivity extends BaseActivity {
     @Override
     public void initTitle() {
         new ToolBar.Builder(this)
-                .setVisibility(true)
                 .setTitle("在线报事")
                 .setRightText("报事历史")
                 .setRightTextClickListener(new View.OnClickListener() {
@@ -43,4 +43,17 @@ public class ReportActivity extends BaseActivity {
                 })
                 .builder();
     }
+
+    @Click({R.id.linear_outside, R.id.linear_indoor})
+    public void click(View view) {
+        switch (view.getId()) {
+            case R.id.linear_indoor:
+                startActivity(IndoorActivity.class);
+                break;
+            case R.id.linear_outside:
+                startActivity(GQBSActivity.class);
+                break;
+        }
+    }
+
 }

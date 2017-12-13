@@ -9,6 +9,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/linear_outside"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
@@ -45,6 +46,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linear_indoor"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:gravity="center"

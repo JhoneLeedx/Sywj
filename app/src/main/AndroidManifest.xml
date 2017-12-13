@@ -27,6 +27,9 @@
         <activity android:name=".ui.online.ReportActivity" />
         <activity android:name=".ui.bind.BindNextActivity" />
         <activity android:name=".ui.online.BSHistoryActivity" />
+        <activity android:name=".ui.online.GQBSActivity" />
+        <activity android:name=".ui.online.IndoorActivity" />
+        <activity android:name=".ui.online.BSDetailActivity" />
     </application>
 
 </manifest>
